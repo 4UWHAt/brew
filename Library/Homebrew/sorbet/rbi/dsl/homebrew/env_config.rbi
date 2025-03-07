@@ -46,7 +46,7 @@ module Homebrew::EnvConfig
     sig { returns(String) }
     def bottle_domain; end
 
-    sig { returns(String) }
+    sig { returns(T.nilable(::String)) }
     def brew_git_remote; end
 
     sig { returns(T.nilable(::String)) }
@@ -70,7 +70,7 @@ module Homebrew::EnvConfig
     sig { returns(T::Boolean) }
     def color?; end
 
-    sig { returns(String) }
+    sig { returns(T.nilable(::String)) }
     def core_git_remote; end
 
     sig { returns(String) }
